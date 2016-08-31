@@ -1,0 +1,36 @@
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=1024" />
+  {% if page.desc %}
+    <meta content="{{ page.desc }}" name="description">
+  {% endif %}
+  {% if page.keywords %}
+    <meta name="keywords" content="{{ page.keywords }}">
+  {% endif %}
+  <!-- <meta name="author" content="{{ site.author.name }}"> -->
+
+  <title>
+    {% if page.title != "index" %}
+        {{ site.title }}|{{ page.title }}
+    {% else %}
+        {{ site.title }}
+    {% endif %}
+  </title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="{{ "static/img/favicon.ico" | prepend: site.baseurl }}">
+
+  <!-- Third-party CSS -->
+
+
+  <!-- Custom styles for this template -->
+  <link href="{{"static/css/reset.css"| prepend: site.baseurl }}" rel="stylesheet">
+  <link href="{{"static/css/style.css"| prepend: site.baseurl }}" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script src="{{"static/js/jquery.1.8.2.min.js"| prepend: site.baseurl }}"></script>
+  <script src="{{ "static/js/jquery.plugin.min.js" | prepend: site.baseurl }}"></script>
+  <!-- <script src="{{ "static/js/html5.js" | prepend: site.baseurl }}"></script> -->
+  <!-- <script src="{{ "static/js/killie6.js" | prepend: site.baseurl }}"></script> -->
+
+</head>
