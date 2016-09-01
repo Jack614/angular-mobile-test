@@ -1,0 +1,141 @@
+---
+layout: base
+---
+
+{% if page.style == 'case' %}
+<section id="show_cases">
+    <div class="cat_title">
+        <div class="wrapper">
+            <h2><strong>CASES</strong>案例</h2>
+            <p>我们的作品，他们的故事<br/>Our work, their stories </p>
+        </div>
+    </div>
+    <article>
+        <div class="wrapper">
+            <div id="overview">
+                <div class="overview_bg"></div>
+                <div id="case_info">
+                    <ul>
+                        <li>名称：中铁二局装饰装修工程有限公司</li>
+                        <li>分类：学校政府</li>
+                        <li>TAG：食品优品道新象</li>
+                    </ul>
+                    <a href="javascript:if(confirm('http://www.ztzszx.com/  点击这里给我发送临时消息'))window.location='http://www.ztzszx.com/'" tppabs="http://www.ztzszx.com/" class="btn_blue" target="_blank" rel="external nofollow">VISIT SITE 访问该网站</a>
+                    <div class="brief"> 中铁二局集团装饰装修工程有限公司为中铁二局集团有限公司的全资公司，创建于1985年，国家建筑装饰装修施工壹级企业、甲级设计单位，注册资本金壹亿元，年生产能力超过20亿元。
+    拥</div>
+                </div>
+            </div>
+            <div id="detailed">
+                <img alt="" src="/static/uploads/allimg/131102/1-131102210301.jpg" tppabs="http://mc18.eatdou.com/uploads/allimg/131102/1-131102210301.jpg" style="height: 378px; width: 700px;" />
+                <img alt="" src="/static/uploads/allimg/131102/1-131102210302.jpg" tppabs="http://mc18.eatdou.com/uploads/allimg/131102/1-131102210302.jpg" style="height: 378px; width: 700px;" />
+                <img alt="" src="/static/uploads/allimg/131102/1-131102210303.jpg" tppabs="http://mc18.eatdou.com/uploads/allimg/131102/1-131102210303.jpg" style="height: 353px; width: 700px;" />
+            </div>
+        </div>
+    </article>
+    <div id="case_footer">
+        <div class="wrapper showother">
+                        <a class="backlist" href="/case/">返回案例列表</a>
+
+        </div>
+    </div>
+</section>
+<!--[if IE 6]>
+<script type="text/javascript" src="../../js/killie6.js" ></script>
+<![endif]-->
+<script type="text/javascript">
+
+    $("header>div>nav>ul>li>a").hover(function(){
+        $(this).parent().stop(false,true).animate({"background-position-x":"6px",opacity:"0.7"},{duration:"normal", easing: "easeOutElastic"});
+    },function(){
+        $(this).parent().stop(false,true).animate({"background-position-x":"10px",opacity:"1"},{duration:"normal", easing: "easeOutElastic"});
+    });
+        //Cases Start
+        if($.browser.msie&&$.browser.version==6.0&&!$.support.style){
+            $("#overview").height($("#detailed").height());
+        }
+        $(window).scroll(function(){
+            if($.browser.msie&&$.browser.version==6.0&&!$.support.style){
+                return false;
+            }
+            if($(this).scrollTop()>110){
+                $("article").css("background-position","center 80px");
+            }else{
+                $("article").css("background-position","center "+(190-$(this).scrollTop())+"px");
+            }
+        });
+        $('#case_info h1').pngFix();
+        $("#detailed img").lazyload({effect:"fadeIn",failurelimit:10});
+        $("#case_footer>.showother>.previous,#case_footer>.showother>.next").hover(function(){
+            $("span>img",this).stop(false,true).animate({"left":"-20px"},{duration:"fast", easing: "easeOutQuad"});
+            $("#show_thumb>img").hide().eq($(this).index($("#case_footer>.showother>.previous,#case_footer>.showother>.next"))).show();
+            $("#show_thumb").css({display:"block",left:$(this).css("left"),right:$(this).css("right"),bottom:"20px",opacity:"0"}).stop(false,true).animate({bottom:"25px",opacity:"1"},{duration:"fast", easing: "easeOutQuad"});
+        },function(){
+            $("span>img",this).stop(false,true).animate({"left":"0"},{duration:"fast", easing: "easeOutQuad"});
+            $("#show_thumb").stop(false,true).animate({bottom:"20px",opacity:"0"},{duration:"fast", easing: "easeOutQuad"});
+        })
+                    $("#gotop").click(function(){$('body,html').animate({scrollTop:0},500);})
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3fe5b2b119b5fc4931e9c73e7071b0c6' type='text/javascript'%3E%3C/script%3E"));
+    var bds_config = {"bdTop":203};
+    $("#bdshell_js").attr("src","http://share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours());
+
+</script>
+{{ content }}
+{% endif %}
+
+
+{% if page.style == 'news' %}
+<section id="shownews">
+  <div class="cat_title">
+    <div class="wrapper">
+      <h2><strong>NEWS</strong>新闻</h2>
+      <p>最近正在折腾...<br/>
+        Recently is to do ...</p>
+    </div>
+  </div>
+  <div class="category">
+    <div class="wrapper">
+      <h1>{{ page.title }}</h1>
+      <span>UPTATED:{{ page.date | date: "%Y-%m-%d" }} | 分类：
+      {% if page.kind == 'company' %}
+      <a href="/news/company/" tppabs="http://mc18.eatdou.com/news/hynews/">
+      公司新闻
+      </a>
+      {% endif %}
+      {% if page.kind == 'industry' %}
+      <a href="index.htm" tppabs="http://mc18.eatdou.com/news/hynews/">
+      行业动态
+      </a>
+      {% endif %}
+      </span> </div>
+  </div>
+  <article>
+    <div class="wrapper" id="detailed">
+    {{ content }}
+    <div id="case_footer">
+      <div class="wrapper showother"> <a class="backlist" href="/news/">返回新闻列表</a> </div>
+    </div>
+  </article>
+</section>
+<script type="text/javascript">
+    $("header>div>nav>ul>li>a").hover(function(){
+        $(this).parent().stop(false,true).animate({"background-position-x":"6px",opacity:"0.7"},{duration:"normal", easing: "easeOutElastic"});
+    },function(){
+        $(this).parent().stop(false,true).animate({"background-position-x":"10px",opacity:"1"},{duration:"normal", easing: "easeOutElastic"});
+    });
+        //Show News Start
+        $("#case_footer>.showother>.previous,#case_footer>.showother>.next").hover(function(){
+            $("span>img",this).stop(false,true).animate({"left":"-20px"},{duration:"fast", easing: "easeOutQuad"});
+            $("#show_thumb>img").hide().eq($(this).index($("#case_footer>.showother>.previous,#case_footer>.showother>.next"))).show();
+        },function(){
+            $("span>img",this).stop(false,true).animate({"left":"0"},{duration:"fast", easing: "easeOutQuad"});
+        });
+        //Show News End
+                    $("#gotop").click(function(){$('body,html').animate({scrollTop:0},500);})
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3fe5b2b119b5fc4931e9c73e7071b0c6' type='text/javascript'%3E%3C/script%3E"));
+    var bds_config = {"bdTop":203};
+    $("#bdshell_js").attr("src","http://share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours());
+</script>
+
+{% endif %}

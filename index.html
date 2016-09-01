@@ -9,9 +9,8 @@ permalink: /
     <li style="background-image:url(/static/images/banner_bg1.jpg);display:block">
       <div class="wrapper">
         <div class="ad_txt">
-          <h2>互联网品牌传播解决方案</h2>
-          <p>成都顶级品牌网站建设公司！<br/>
-            基于互联网的品牌行销策略的策划与执行。<br/>
+          <h2>品牌网站建设</h2>
+          <p>基于互联网的品牌行销策略的策划与执行。<br/>
             品牌形象挖掘、梳理、包装、表现与传播。<br/>
             辅助企业实现品牌战略目标的互联网解决方案。</p>
         </div>
@@ -32,7 +31,7 @@ permalink: /
     <li style="background-image:url(/static/images/banner_bg3.jpg);">
       <div class="wrapper">
         <div class="ad_txt">
-          <h2>互联网时代的整合营销</h2>
+          <h2>互联网时代的营销策划</h2>
           <p>基于互联网的品牌营销策略的定制与执行。<br/>
             品牌形象挖掘、梳理、包装、表现与传播。<br/>
             坐拥着最为丰富的行业经验与优势资源。</p>
@@ -65,11 +64,11 @@ permalink: /
     <li style="background-image:url(/static/images/banner_bg6.jpg);">
       <div class="wrapper">
         <div class="ad_txt">
-          <h2>全新的学术会议体验</h2>
-          <p>工作更高效，主办方更轻松。<br/>
-            线上报名，让主办方不再为报名的事而费尽脑筋。<br/>
-            线上投稿、审稿，为主办方提高收寄、审稿效率。<br/>
-            酒店预订，会议行程更加轻松。</p>
+          <h2>微信公众号开发</h2>
+          <p>微信商城，微信服务号。<br/>
+            微信公众号、服务号申请、配置，直接使用。<br/>
+            微信服务号网站建设，快速吸粉，增加影响力<br/>
+            微信商城下单，购买商品更加方便。</p>
         </div>
         <div class="ad_img"> <img src="/static/images/6.png" width="506" height="404" alt="" /> </div>
       </div>
@@ -77,9 +76,9 @@ permalink: /
     <li style="background-image:url(/static/images/banner_bg7.jpg);">
       <div class="wrapper">
         <div class="ad_txt">
-          <h2>医院网站管理系统(HMS)</h2>
+          <h2>实验室管理系统</h2>
           <p>与大型医院密切合作。<br/>
-            诊疗挂号很轻松，检验结果实时查询，在线医患服务。<br/>
+            自动化的样本检测流程，数据处理更加快速准确。<br/>
             便捷的数据处理能力，稳定的软件基础架构。</p>
         </div>
         <div class="ad_img"> <img src="/static/images/7.png"  width="506" height="404" alt="" /> </div>
@@ -88,7 +87,7 @@ permalink: /
     <li style="background-image:url(/static/images/banner_bg8.jpg);">
       <div class="wrapper">
         <div class="ad_txt">
-          <h2>智慧点亮网络(RUIFOX-LAB)</h2>
+          <h2>IT方案设计咨询</h2>
           <p>互联网改变世界，我们改变互联网。<br/>
             精彩前沿技术演练场。<br/>
             新产品尝鲜体验。</p>
@@ -148,28 +147,23 @@ permalink: /
   <div class="newsdata">
     <div class="newsad"> <img src="/static/images/news.png"  alt="html5" width="320" height="485" /> </div>
     <ul>
+    {% assign counter = 0 %}
+        {% for post in site.posts %}
+                 {% if post.style == 'news' %}
+    {% assign counter = counter | plus: 1 %}
+{% if counter < 5 %}
 
-       <li> <a href="news/hynews/23.html"><img src="/static/uploads/131102/1-131102210K4H1.jpg"   width="90" height="90" alt="网络营销最重要的一步，你做到了吗？"/></a>
-        <div class="newslist"> <a href="news/hynews/23.html" title="网络营销最重要的一步，你做到了吗？">网络营销最重要的一步，你做到了吗？</a> <span>UPTATED:2013/11/02</span>
-          <p>很多人总是会问，为什么我的网站转化率总是居高不下？也许你的网站很美观大气，功能很完善，入口非常便捷丰富，但是就是转化不好！原因只在于，你....</p>
-        </div>
-      </li>
-<li> <a href="news/hynews/9.html" ><img src="/static/uploads/131101/1-1311012213054G.png"  width="90" height="90" alt="百度免费＂发武器＂ 布局移动互联网"/></a>
-        <div class="newslist"> <a href="news/hynews/9.html" title="百度免费＂发武器＂ 布局移动互联网">百度免费＂发武器＂ 布局移动互联网</a> <span>UPTATED:2013/11/01</span>
-          <p>中广网北京9月3日消息 据经济之声《天下公司》报道，说起百度，恐怕听众朋友们都不会陌生。这家创办于2001年1月1日的中文互联网搜索公司，经过十余年....</p>
-        </div>
-      </li>
-<li> <a href="news/hynews/8.html" ><img src="/static/uploads/131101/1-13110122115U92.png"  width="90" height="90" alt="企业网站已经悄悄的转变成了一种网络营销应用"/></a>
-        <div class="newslist"> <a href="news/hynews/8.html" title="企业网站已经悄悄的转变成了一种网络营销应用">企业网站已经悄悄的转变成了一种网络营销应用</a> <span>UPTATED:2013/11/01</span>
-          <p>当是你最后一次使用的电话簿找到的产品或服务？如果你有一台电脑，平板电脑或智能手机的技术和访问，甚至有基本的了解，这可能是很难记住，当你拖....</p>
-        </div>
-      </li>
-<li> <a href="news/gsnews/7.html" ><img src="/static/uploads/131031/1-1310312352421V.jpg"  width="90" height="90" alt="html5+js技术网站应用案例：三盛·都会城网站建设"/></a>
-        <div class="newslist"> <a href="news/gsnews/7.html"  title="html5+js技术网站应用案例：三盛·都会城网站建设">html5+js技术网站应用案例：三盛·都会城网站建设</a> <span>UPTATED:2013/11/01</span>
-          <p>三盛·都会城作为三盛地产在成都的全资开发项目，入主龙泉经开区，承载三盛地产在成都建立品牌的任务，三盛·都会城总投入近40亿元，前期将投入3亿重....</p>
-        </div>
-      </li>
-
+                    <li>
+                <a href="{{ post.url }}" tppabs="http://mc18.eatdou.com/news/hynews/23.html"><img src="{{ post.img }}" data-original="" alt="{{ post.title }}" /></a>
+                <div class="newslist">
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                    <span>UPTATED:{{ post.date | date: "%Y-%m-%d" }}</span>
+                    <p>{{ post.content | strip_html | truncate:130 }}</p>
+                </div>
+            </li>
+                 {% endif %}
+                 {% endif %}
+                {% endfor %}
 
     </ul>
   </div>

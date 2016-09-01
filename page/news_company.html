@@ -1,7 +1,7 @@
 ---
 layout: base
-title: 新闻
-permalink: /news/
+title: 公司新闻
+permalink: /news/company/
 ---
 
 <section id="newslist">
@@ -27,6 +27,7 @@ permalink: /news/
                 <ul class="news wrapper">
                 {% for post in site.posts %}
                  {% if post.style == 'news' %}
+                 {% if post.kind == 'company' %}
 
                     <li>
                 <a href="{{ post.url }}" tppabs="http://mc18.eatdou.com/news/hynews/23.html"><img src="{{ post.img }}" data-original="" alt="{{ post.title }}" /></a>
@@ -37,19 +38,13 @@ permalink: /news/
                 </div>
             </li>
                  {% endif %}
+                 {% endif %}
                 {% endfor %}
-                <li>
-                <a href="hynews/23.html" tppabs="http://mc18.eatdou.com/news/hynews/23.html"><img src="/static/uploads/131102/1-131102210K4H1.jpg" tppabs="http://mc18.eatdou.com/uploads/131102/1-131102210K4H1.jpg" data-original="" alt="网络营销最重要的一步，你做到了吗？" /></a>
-                <div class="newslist">
-                    <a href="hynews/23.html" tppabs="http://mc18.eatdou.com/news/hynews/23.html">网络营销最重要的一步，你做到了吗？</a>
-                    <span>UPTATED:2013/11/02</span>
-                    <p>很多人总是会问，为什么我的网站转化率总是居高不下？也许你的网站很美观大气，功能很完善，入口非常便捷丰富，但是就是转化不好！原因只在于，你忽略了网络营销最重要的一步，所以你....</p>
-                </div>
-            </li>
                     </ul>
          <!-- <div class="dede_pages">
             <ul class="pagelist">
              <li><span class="pageinfo">共 <strong>1</strong>页<strong>4</strong>条记录</span></li>
+
             </ul>
         </div> -->
 
@@ -64,6 +59,8 @@ permalink: /news/
     },function(){
         $(this).parent().stop(false,true).animate({"background-position-x":"10px",opacity:"1"},{duration:"normal", easing: "easeOutElastic"});
     });
+            <!----新闻---->
+    <!---- 新闻首页 ----->
         //Nav End
 $("#gotop").click(function(){$('body,html').animate({scrollTop:0},500);})
     var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
