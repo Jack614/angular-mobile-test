@@ -20,7 +20,7 @@ permalink: /news/company/
         </div>
     </div>
     <ul class="news wrapper">
-        {% for post in site.posts %} {% if post.style == 'news' %} {% if post.kind == 'company' %}
+        {% for post in site.posts %} {% if post.style == 'news' %} {% if post.kind == '公司新闻' %}
         <li>
             <a href="{{ post.url }}" tppabs="http://mc18.eatdou.com/news/hynews/23.html"><img src="{{ post.img }}" data-original="" alt="{{ post.title }}" /></a>
             <div class="newslist">

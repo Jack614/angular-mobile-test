@@ -6,7 +6,7 @@ keywords: "jekyll,blog,first"
 img: "/static/uploads/131102/1-131102210K4H1.jpg"
 date: 2015-09-07
 style: news
-kind: industry
+kind: "行业动态"
 ---
 
 ## 认证 Authentication
