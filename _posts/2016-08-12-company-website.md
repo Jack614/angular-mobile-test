@@ -3,8 +3,8 @@ layout: post
 title:  "企业网站已经悄悄的转变成了一种网络营销应用"
 desc: "企业网站已经悄悄的转变成了一种网络营销应用"
 keywords: "网络营销,企业网站,应用"
-img: "/static/uploads/131101/1-13110122115U92.png"
-date: 2016-09-02
+img: "/static/img/news/industry/qywz.png"
+date: 2016-08-12
 style: news
 kind: "行业动态"
 ---

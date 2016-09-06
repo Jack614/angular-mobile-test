@@ -119,16 +119,33 @@ $("#gotop").click(function() {
         scrollTop: 0
     }, 500);
 })
-var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3fe5b2b119b5fc4931e9c73e7071b0c6' type='text/javascript'%3E%3C/script%3E"));
-var bds_config = {
-    "bdTop": 203
-};
-$("#bdshell_js").attr("src", "http://share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours());
 </script>
 {% endif %}
 
 {% if page.style == 'news' %}
+<style type="text/css">
+    h5 {
+        font-size: 14px;
+    }
+    h6 {
+        font-size: 12px;
+    }
+    blockquote {
+        margin: 20px 30px;
+        padding: 20px 30px;
+        color: rgb(102, 102, 102);
+        font-family: 'Microsoft YaHei', 'Segoe UI', Tahoma, Arial, Verdana, sans-serif;
+        line-height: 21px;
+        text-align: justify;
+        background-color: rgb(235, 235, 235);
+        border: 1px solid rgb(220, 220, 220);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        box-shadow: rgb(204, 204, 204) 3px 3px 8px;
+    }
+</style>
 <section id="shownews">
     <div class="cat_title">
         <div class="wrapper">
