@@ -15,4 +15,5 @@ title : Sitemap
         <loc>{{site.url}}{{ page.url }}</loc>
     </url>
 {% endfor %}
+
 </urlset>
