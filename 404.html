@@ -11,20 +11,31 @@ permalink: /404.html
     </div>
     <article class="serv_detailed">
         <div id="detailed">
-<div class="t4Content">
-<ul>
-<li>抱歉，您所访问的页面不存在！</li>
-</ul>
-</div>
+            <div class="t4Content">
+                <ul>
+                    <li>抱歉，您所访问的页面不存在！</li>
+                </ul>
+            </div>
         </div>
         <div id="case_footer"></div>
     </article>
 </section>
-
 <script type="text/javascript">
-    $("header>div>nav>ul>li>a").hover(function(){
-        $(this).parent().stop(false,true).animate({"background-position-x":"6px",opacity:"0.7"},{duration:"normal", easing: "easeOutElastic"});
-    },function(){
-        $(this).parent().stop(false,true).animate({"background-position-x":"10px",opacity:"1"},{duration:"normal", easing: "easeOutElastic"});
+$("header>div>nav>ul>li>a").hover(function() {
+    $(this).parent().stop(false, true).animate({
+        "background-position-x": "6px",
+        opacity: "0.7"
+    }, {
+        duration: "normal",
+        easing: "easeOutElastic"
     });
+}, function() {
+    $(this).parent().stop(false, true).animate({
+        "background-position-x": "10px",
+        opacity: "1"
+    }, {
+        duration: "normal",
+        easing: "easeOutElastic"
+    });
+});
 </script>
